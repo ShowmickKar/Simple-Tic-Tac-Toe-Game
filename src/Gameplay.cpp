@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h> 
 #include <vector>
 
 using namespace std;
@@ -9,6 +10,7 @@ int player = 1;
 // bool draw = false;
 
 void board(vector<char> matrix) {
+	system("clear");
 	cout << "     |     |     " << endl;
     cout << "  " << matrix[1] << "  |  " << matrix[2] << "  |  " << matrix[3] << endl;
 
@@ -22,7 +24,7 @@ void board(vector<char> matrix) {
 
     cout << "  " << matrix[7] << "  |  " << matrix[8] << "  |  " << matrix[9] << endl;
 
-    cout << "     |     |     " << endl << endl;
+    cout << "     |     |     " << endl << flush;
 }
 
 bool checkWin(vector<char> matrix) {
