@@ -84,12 +84,12 @@ int main() {
 
 		// turn--;
 		if (player == 1) {
-			matrix[move] = '0';
+			matrix[move] = 'X';
 			player = 2;
 		}
 
 		else if (player == 2) {
-			matrix[move] = 'X';
+			matrix[move] = '0';
 			player = 1;
 		}
 
